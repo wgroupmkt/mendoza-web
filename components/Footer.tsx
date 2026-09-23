@@ -146,10 +146,10 @@ export default function Footer() {
               <p>Mendoza, Argentina</p>
 
               <a
-                href="mailto:info@mendozaestudiantil.com"
+                href="mailto:info@mendozaestudiantil.com.ar"
                 className="w-fit transition hover:text-white"
               >
-                info@mendozaestudiantil.com
+                info@mendozaestudiantil.com.ar
               </a>
 
               <a
