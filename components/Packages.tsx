@@ -52,7 +52,7 @@ export default function Packages() {
           NUESTROS PAQUETES:{" "}
           <span className="font-normal">Elegí cómo querés vivir tu viaje</span>
         </h2>
-          <Image src={principal} className="mt-10"></Image>
+          <Image src={principal} className="mt-10" alt="principal"></Image>
         
       </div>
     </section>
