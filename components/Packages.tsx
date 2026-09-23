@@ -1,4 +1,5 @@
 import Image from "next/image";
+import principal from "../public/Principal.jpeg"
 
 type Package = {
   id: string;
@@ -51,47 +52,8 @@ export default function Packages() {
           NUESTROS PAQUETES:{" "}
           <span className="font-normal">Elegí cómo querés vivir tu viaje</span>
         </h2>
-
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {packages.map((pkg) => (
-            <div
-              key={pkg.id}
-              className="flex flex-col rounded-lg border border-slate-200 bg-white p-5 shadow-sm"
-            >
-              <h3 className="flex items-center gap-2 text-base font-bold text-slate-900">
-                <span aria-hidden>{pkg.icon}</span>
-                {pkg.name}
-              </h3>
-              <p className="text-xs text-slate-500">{pkg.tagline}</p>
-
-              <div className="relative mt-3 aspect-[4/3] w-full overflow-hidden rounded-md bg-slate-100">
-                <Image
-                  src={pkg.image}
-                  alt={pkg.imageAlt}
-                  fill
-                  sizes="(min-width: 640px) 33vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-
-              <ul className="mt-4 flex-1 space-y-1.5 text-sm text-slate-700">
-                {pkg.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-2">
-                    <span className="text-slate-400">•</span>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                type="button"
-                className="mt-5 w-full rounded-md bg-sky-700 py-2 text-sm font-semibold text-white transition hover:bg-sky-800"
-              >
-                VER {pkg.name}
-              </button>
-            </div>
-          ))}
-        </div>
+          <Image src={principal} className="mt-10"></Image>
+        
       </div>
     </section>
   );

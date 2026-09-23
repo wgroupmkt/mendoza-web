@@ -19,26 +19,14 @@ export default function Hero() {
         <h1 className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
           DESCUBRÍ MENDOZA A TU MANERA
         </h1>
-        <p className="text-sm text-slate-700 sm:text-base">
-          ¿Quiénes somos? (Video de Presentación de Experiencias)
-        </p>
-
-        <button
-          type="button"
-          aria-label="Reproducir video de presentación"
-          className="group mt-4 flex aspect-video w-full max-w-xl items-center justify-center rounded-xl bg-slate-300/90 shadow-lg transition hover:bg-slate-300"
-        >
-          <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 shadow-md transition group-hover:scale-105 sm:h-20 sm:w-20">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="ml-1 h-7 w-7 text-slate-500 sm:h-9 sm:w-9"
-            >
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </span>
-        </button>
+        <video
+  className="mt-4 aspect-video w-full max-w-xl rounded-xl object-cover shadow-lg"
+  controls
+  preload="metadata"
+>
+  <source src="/video-presentacion.mp4" type="video/mp4" />
+  Tu navegador no soporta videos.
+</video>
       </div>
     </section>
   );
