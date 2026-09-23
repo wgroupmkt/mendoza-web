@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logomarron from "../public/logo-marron.png"
 
 export default function Header() {
   return (
@@ -8,7 +9,7 @@ export default function Header() {
         {/* LOGO */}
         <a href="#inicio" className="flex items-center">
           <Image
-            src="/logo-mendoza-estudiantil.png"
+            src={logomarron}
             alt="Mendoza Estudiantil"
             width={170}
             height={55}

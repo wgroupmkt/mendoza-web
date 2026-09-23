@@ -1,4 +1,6 @@
 import Image from "next/image";
+import logo from "../public/logo-mendoza-estudiantil.png"
+
 
 export default function Footer() {
   return (
@@ -54,7 +56,7 @@ export default function Footer() {
           {/* LOGO / MARCA */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Image
-              src="/logo-mendoza-estudiantil-blanco.png"
+              src={logo}
               alt="Mendoza Estudiantil"
               width={180}
               height={70}
