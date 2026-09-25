@@ -46,10 +46,6 @@ const images: GalleryItem[] = [
   },
   {
     src: foto7,
-    alt: "Experiencias estudiantiles",
-  },
-  {
-    src: foto8,
     alt: "Paisajes de Mendoza",
     className: "md:col-span-2",
   },
