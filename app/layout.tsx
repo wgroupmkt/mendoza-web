@@ -14,7 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Descubrí Mendoza a tu Manera",
-  description: "Elegí cómo querés vivir tu viaje por Mendoza: Cóndor, Andes o Aconcagua.",
+  description:
+    "Elegí cómo querés vivir tu viaje por Mendoza: Cóndor, Andes o Aconcagua.",
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -23,7 +28,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white">{children}</body>
+      <body className="min-h-full flex flex-col bg-white">
+        {children}
+      </body>
     </html>
   );
 }
