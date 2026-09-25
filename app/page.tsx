@@ -4,6 +4,7 @@ import Packages from "@/components/Packages";
 import ComparisonTable from "@/components/ComparisonTable";
 import Footer from "@/components/Footer";
 import Brands from "@/components/Brands";
+import Galeria from "@/components/Gallery"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Packages />
         <ComparisonTable />
         <Brands/>
+        <Galeria />
       </main>
       <Footer />
     </>

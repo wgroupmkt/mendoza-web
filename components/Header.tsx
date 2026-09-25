@@ -35,13 +35,6 @@ export default function Header() {
           </a>
 
           <a
-            href="#nosotros"
-            className="text-sm font-medium tracking-wide text-[#573325] transition hover:text-[#8A7354]"
-          >
-            Nosotros
-          </a>
-
-          <a
             href="#galeria"
             className="text-sm font-medium tracking-wide text-[#573325] transition hover:text-[#8A7354]"
           >
